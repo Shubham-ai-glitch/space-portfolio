@@ -1,5 +1,5 @@
-import { RxGithubLogo, RxInstagramLogo, RxLinkedinLogo } from "react-icons/rx";
-import { FaTelegramPlane, FaTwitter } from "react-icons/fa";
+import { RxGithubLogo } from "react-icons/rx";
+import { FaTelegramPlane } from "react-icons/fa";
 
 export const Skill_Data = [
   { skill_name: "Html 5", Image: "/html.png", width: 80, height: 80 },
@@ -26,14 +26,6 @@ export const FOOTER_DATA = [
     ],
   },
   {
-    title: "Social Media",
-    data: [
-      { name: "Instagram", icon: RxInstagramLogo, link: "https://www.instagram.com/Shubham.zenith_" },
-      { name: "Twitter", icon: FaTwitter, link: "#" },
-      { name: "LinkedIn", icon: RxLinkedinLogo, link: "#" },
-    ],
-  },
-  {
     title: "About",
     data: [
       { name: "Contact Me", icon: null, link: "mailto:shubhamsingh9415191609@gmail.com" },
@@ -44,13 +36,13 @@ export const FOOTER_DATA = [
 export const PROJECTS = [
   {
     title: "Certified Cybersecurity Educator Professional (CCEP)",
-    description: "Issued by Red Team Leaders on December 7, 2025. Validates expertise in network security and educator protocols.",
+    description: "Issued by Red Team Leaders on December 7, 2025. This certification validates expertise in secure infrastructure and defense training.",
     image: "/cert2.jpg",
     link: "https://github.com/Shubhams872-spec",
   },
   {
     title: "Cybersecurity & Ethical Hacking",
-    description: "Certified by Cyber Ethics Academy on 20 December 2025. Specializing in penetration testing and digital defense.",
+    description: "Certified by Cyber Ethics Academy on 20 December 2025. Focused on vulnerability assessment and system penetration testing.",
     image: "/cert1.jpg",
     link: "https://github.com/Shubhams872-spec",
   },
@@ -62,7 +54,12 @@ export const NAV_LINKS = [
   { title: "Projects", link: "#projects" },
 ];
 
-export const LINKS = { resume: "/resume.pdf" };
+export const LINKS = { 
+  resume: "/resume.pdf",
+  sourceCode: "https://github.com/Shubhams872-spec/space-portfolio" 
+};
+
 export const FULLSTACK_SKILL = [];
 export const OTHER_SKILL = [];
-export const ABOUT_TEXT = "I am Shubham Singh, a NEET aspirant and Frontend Developer from Kanpur, India. I am passionate about Cybersecurity and Ethical Hacking.";
+export const BACKEND_SKILL = [];
+export const ABOUT_TEXT = "I am Shubham Singh, an 11th-grade student and Frontend Developer from Kanpur. I am currently preparing for NEET while specializing in Cybersecurity and Ethical Hacking.";
