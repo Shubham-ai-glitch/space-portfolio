@@ -1,67 +1,38 @@
 "use client";
-
+import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-
-import { slideInFromTop } from "@/lib/motion";
+import { slideInFromLeft, slideInFromRight } from "@/lib/motion";
+import { ABOUT_TEXT } from "@/constants";
 
 export const Encryption = () => {
   return (
-    <div className="flex flex-row relative items-center justify-center min-h-screen w-full h-full -z-20">
-      <div className="absolute w-auto h-auto top-0 z-[5]">
-        <motion.div
-          variants={slideInFromTop}
-          className="text-[40px] font-medium text-center text-gray-200"
-        >
-          Performance{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-            &
-          </span>{" "}
-          security.
+    <section id="about-me" className="flex flex-col relative items-center justify-center min-h-screen w-full h-full z-[20] py-20">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-10 px-10 md:px-20 mt-20 w-full">
+        
+        <motion.div variants={slideInFromLeft(0.5)} className="flex flex-col gap-4 text-start max-w-[600px]">
+          <h2 className="text-4xl font-bold text-white uppercase tracking-wider">About Me</h2>
+          <p className="text-xl text-gray-300 leading-relaxed">
+            {ABOUT_TEXT}
+          </p>
+          <div className="text-cyan-400 font-mono text-sm mt-4 border-l-2 border-cyan-500 pl-4">
+             {">"} Status: NEET Aspirant <br/>
+             {">"} Specialization: Ethical Hacking & Frontend <br/>
+             {">"} Location: Kanpur, India
+          </div>
+        </motion.div>
+
+        <motion.div variants={slideInFromRight(0.5)} className="relative group">
+          <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-cyan-500 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 animate-pulse"></div>
+          <Image
+            src="/shubham.png" 
+            alt="Shubham Singh Frontend Developer Kanpur"
+            width={350}
+            height={350}
+            className="relative rounded-full object-cover border-4 border-[#7042f88b] shadow-2xl"
+          />
         </motion.div>
       </div>
-
-      <div className="flex flex-col items-center justify-center translate-y-[-50px] absolute z-[20] w-auto h-auto">
-        <div className="flex flex-col items-center group cursor-pointer w-auto h-auto">
-          <Image
-            src="/lock-top.png"
-            alt="Lock top"
-            width={50}
-            height={50}
-            className="translate-y-5 transition-all duration-200 group-hover:translate-y-11"
-          />
-          <Image
-            src="/lock-main.png"
-            alt="Lock main"
-            width={70}
-            height={70}
-            className="z-10"
-          />
-        </div>
-
-        <div className="Welcome-box px-[15px] py-[4px] z-[20] border my-[20px] border-[#7042F88B] opacity-[0.9]">
-          <h1 className="Welcome-text text-[12px]">Encryption</h1>
-        </div>
-      </div>
-
-      <div className="absolute z-[20] bottom-[10px] px-[5px]">
-        <div className="cursive text-[20px] font-medium text-center text-gray-300">
-          Secure your data with end-to-end encryption.
-        </div>
-      </div>
-
-      <div className="w-full flex items-start justify-center absolute">
-        <video
-          loop
-          muted
-          autoPlay
-          playsInline
-          preload="false"
-          className="w-full h-auto"
-        >
-          <source src="/videos/encryption-bg.webm" type="video/webm" />
-        </video>
-      </div>
-    </div>
+    </section>
   );
 };
