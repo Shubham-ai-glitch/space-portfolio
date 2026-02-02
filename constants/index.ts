@@ -2,20 +2,19 @@ import { RxGithubLogo } from "react-icons/rx";
 import { FaTelegramPlane } from "react-icons/fa";
 
 export const Skill_Data = [
-  { skill_name: "Html 5", Image: "/html.png", width: 80, height: 80 },
-  { skill_name: "Css 3", Image: "/css.png", width: 80, height: 80 },
-  { skill_name: "Java Script", Image: "/js.png", width: 65, height: 65 },
-  { skill_name: "Tailwind Lucide", Image: "/tailwind.png", width: 80, height: 80 },
-  { skill_name: "React", Image: "/react.png", width: 80, height: 80 },
-  { skill_name: "Type Script", Image: "/ts.png", width: 80, height: 80 },
-  { skill_name: "Next js 13", Image: "/next.png", width: 80, height: 80 },
+  { skill_name: "Html 5", image: "/html.png", width: 80, height: 80 },
+  { skill_name: "Css 3", image: "/css.png", width: 80, height: 80 },
+  { skill_name: "Java Script", image: "/js.png", width: 65, height: 65 },
+  { skill_name: "Tailwind Lucide", image: "/tailwind.png", width: 80, height: 80 },
+  { skill_name: "React", image: "/react.png", width: 80, height: 80 },
+  { skill_name: "Type Script", image: "/ts.png", width: 80, height: 80 },
+  { skill_name: "Next js 13", image: "/next.png", width: 80, height: 80 },
 ];
 
-// Netlify build fix: In variables ko template dhund raha hai
 export const SKILL_DATA = Skill_Data; 
 export const FRONTEND_SKILL = Skill_Data;
 export const BACKEND_SKILL = [
-  { skill_name: "Node js", Image: "/node-js.png", width: 80, height: 80 },
+  { skill_name: "Node js", image: "/node-js.png", width: 80, height: 80 },
 ];
 export const FULLSTACK_SKILL = [];
 export const OTHER_SKILL = [];
@@ -44,13 +43,13 @@ export const FOOTER_DATA = [
 export const PROJECTS = [
   {
     title: "Certified Cybersecurity Educator Professional (CCEP)",
-    description: "Issued by Red Team Leaders on December 7, 2025. Validates expertise in secure infrastructure and defense training.",
+    description: "Issued by Red Team Leaders on December 7, 2025. This certification validates my advanced expertise in network security and digital defense training.",
     image: "/cert2.jpg",
     link: "https://github.com/Shubhams872-spec",
   },
   {
     title: "Cybersecurity & Ethical Hacking",
-    description: "Certified by Cyber Ethics Academy on 20 December 2025. Focused on vulnerability assessment and penetration testing.",
+    description: "Certified by Cyber Ethics Academy on 20 December 2025. Proves practical skills in vulnerability assessment and system penetration testing.",
     image: "/cert1.jpg",
     link: "https://github.com/Shubhams872-spec",
   },
