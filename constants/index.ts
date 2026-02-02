@@ -13,11 +13,17 @@ export const Skill_Data = [
 
 export const SKILL_DATA = Skill_Data; 
 export const FRONTEND_SKILL = Skill_Data;
+
+// Inhe khali nahi chhod sakte, isliye temporary data add kiya hai
 export const BACKEND_SKILL = [
   { skill_name: "Node js", image: "/node-js.png", width: 80, height: 80 },
 ];
-export const FULLSTACK_SKILL = [];
-export const OTHER_SKILL = [];
+export const FULLSTACK_SKILL = [
+  { skill_name: "Docker", image: "/docker.webp", width: 70, height: 70 },
+];
+export const OTHER_SKILL = [
+  { skill_name: "Go", image: "/go.png", width: 60, height: 60 },
+];
 
 export const SOCIALS = [
   { name: "Telegram", icon: FaTelegramPlane, link: "https://t.me/Shubhams872" },
@@ -43,13 +49,13 @@ export const FOOTER_DATA = [
 export const PROJECTS = [
   {
     title: "Certified Cybersecurity Educator Professional (CCEP)",
-    description: "Issued by Red Team Leaders on December 7, 2025. This certification validates my advanced expertise in network security and digital defense training.",
+    description: "Issued by Red Team Leaders on December 7, 2025. Validates expertise in secure infrastructure and defense training.",
     image: "/cert2.jpg",
     link: "https://github.com/Shubhams872-spec",
   },
   {
     title: "Cybersecurity & Ethical Hacking",
-    description: "Certified by Cyber Ethics Academy on 20 December 2025. Proves practical skills in vulnerability assessment and system penetration testing.",
+    description: "Certified by Cyber Ethics Academy on 20 December 2025. Focused on vulnerability assessment and penetration testing.",
     image: "/cert1.jpg",
     link: "https://github.com/Shubhams872-spec",
   },
@@ -66,4 +72,4 @@ export const LINKS = {
   sourceCode: "https://github.com/Shubhams872-spec/space-portfolio" 
 };
 
-export const ABOUT_TEXT = "I am Shubham Singh, an 11th-grade student and Frontend Developer from Kanpur. I am currently preparing for NEET while specializing in Cybersecurity and Ethical Hacking.";
+export const ABOUT_TEXT = "I am Shubham Singh, an 11th-grade student and Frontend Developer from Kanpur. Currently preparing for NEET while specializing in Cybersecurity.";
