@@ -27,20 +27,26 @@ export const OTHER_SKILL = [
 
 export const SKILL_DATA = [...FRONTEND_SKILL, ...BACKEND_SKILL, ...FULLSTACK_SKILL, ...OTHER_SKILL];
 
-export const ABOUT_TEXT = `I am Shubham Singh, an 11th-grade student and NEET aspirant at Aakash Institute, Kanpur. I balance biology studies with Frontend Development and Cybersecurity to innovate in healthcare tech.`;
+export const ABOUT_TEXT = `I am Shubham Singh, a high-performance Frontend Developer and **Cybersecurity Expert** based in Kanpur. Currently a NEET aspirant at Aakash Institute, I bridge the gap between Healthcare and Advanced Technology. My expertise includes React.js, TypeScript, and Ethical Hacking, focusing on building secure digital ecosystems. From mastering Advance Java to securing networks, I am dedicated to technical excellence and innovation.`;
 
 export const PROJECTS = [
   {
-    title: "Advance Java Certification",
-    description: "Mastered enterprise backend development at P-INFOWIZ.",
+    title: "Advance Java Certification (P-INFOWIZ)",
+    description: "Successfully mastered enterprise-level backend development at P-INFOWIZ, Kanpur. Expertise includes advanced JSP, Servlets, and complex JDBC connectivity for building robust, high-performance server-side architectures and secure database management systems.",
     image: "/cert3.jpg",
-    link: "/cert3.jpg",
+    download: "/cert3.jpg", 
   },
   {
-    title: "Cybersecurity Expert",
-    description: "Certified expertise in defensive hacking and network security.",
+    title: "Vulnerability Assessment & Penetration Testing (VAPT)",
+    description: "Certified Cybersecurity Expert specialized in defensive hacking and network security through Cyber Ethics Academy. Professional mastery in identifying system vulnerabilities, conducting deep-dive penetration testing, and implementing enterprise-grade security protocols.",
     image: "/cert1.jpg",
-    link: "/cert1.jpg",
+    download: "/cert1.jpg",
+  },
+  {
+    title: "Certified Cybersecurity Educator (CCEP)",
+    description: "Global credential from Red Team Leaders certifying professional mastery in Cybersecurity Education and Defensive System Management. Expert-level training in maintaining global security standards, digital defense strategies, and technical risk mitigation.",
+    image: "/cert2.jpg",
+    download: "/cert2.jpg",
   }
 ];
 
