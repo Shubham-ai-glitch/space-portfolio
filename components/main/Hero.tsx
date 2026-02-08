@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { slideInFromLeft, slideInFromTop } from "@/utils/motion";
+import { slideInFromLeft, slideInFromTop } from "../../utils/motion"; 
 import { FaTelegramPlane } from "react-icons/fa";
 import { RxInstagramLogo } from "react-icons/rx";
 import { ABOUT_TEXT } from "@/constants";
@@ -42,7 +42,6 @@ const HeroContent = () => {
         </div>
       </motion.div>
 
-      {/* Ye hai aapka Bada Bio Section jo Skills ke niche dikhega */}
       <div className="mt-32 px-20 w-full flex flex-col gap-6">
           <h2 className="text-[30px] font-semibold text-white">
             Personal <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">Biography</span>
