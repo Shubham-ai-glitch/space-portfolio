@@ -1,27 +1,32 @@
 import type { Metadata } from "next";
+import StarsCanvas from "@/components/main/StarBackground";
+import Navbar from "@/components/main/Navbar";
+import Footer from "@/components/main/Footer";
+import SoundPlayer from "@/components/main/SoundPlayer"; 
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Shubham Singh | NEET Aspirant & AI Developer Kanpur",
-  description: "Official portfolio of Shubham Singh from Kanpur. NEET aspirant at Aakash Institute and expert in Frontend Development & Cybersecurity.",
-  verification: {
-    google: "ga5xEjZNQCZvZhru74giwcXlVtAd7DUQnsktAbjqTXo", //
+  title: "Shubham Singh | Cybersecurity Expert & AI Developer Kanpur",
+  description: "Official Portfolio of Shubham Singh - Certified Cybersecurity Expert. NEET Aspirant at Aakash Institute.",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/brand-logo.png",
   },
-  keywords: [
-    "Shubham Singh", "Shubham Singh Kanpur", "Shubham Singh AI Glitch", 
-    "Shubham Singh NEET", "Shubham Singh Aakash Institute",
-    "Best Web Developer Kanpur", "Shubham Singh GitHub"
-  ],
+  openGraph: {
+    title: "Shubham Singh | Cybersecurity Expert",
+    images: [{ url: "/brand-logo.png" }],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <head>
-        <meta name="google-site-verification" content="ga5xEjZNQCZvZhru74giwcXlVtAd7DUQnsktAbjqTXo" />
-      </head>
       <body className="bg-[#030014] overflow-y-scroll overflow-x-hidden">
+        <StarsCanvas />
+        <Navbar />
         {children}
+        <Footer />
+        <SoundPlayer /> 
       </body>
     </html>
   );
