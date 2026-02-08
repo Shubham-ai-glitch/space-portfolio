@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import { SKILL_DATA } from "@/constants";
-import SkillDataProvider from "../sub/SkillDataProvider";
-import SkillText from "../sub/SkillText";
+import SkillDataProvider from "@/components/sub/SkillDataProvider";
+import SkillText from "@/components/sub/SkillText";
 
 const Skills = () => {
   return (
