@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { slideInFromLeft, slideInFromTop } from "../../utils/motion"; 
+import { slideInFromLeft, slideInFromTop } from "@/utils/motion"; 
 import { FaTelegramPlane } from "react-icons/fa";
 import { RxInstagramLogo } from "react-icons/rx";
 import { ABOUT_TEXT } from "@/constants";
